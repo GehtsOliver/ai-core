@@ -10,7 +10,7 @@ metadata:
   labels:
     scenarios.ai.sap.com/id: "text-clf-tutorial"
     executables.ai.sap.com/id: "text-clf-infer-tutorial"
-    ai.sap.com/version: "1.0.0"
+    ai.sap.com/version: "2.0.0"
 spec:
   inputs:
     parameters: []
@@ -33,7 +33,7 @@ spec:
         maxReplicas: 5
         containers:
         - name: kfserving-container
-          image: "docker.io/oliverg91/text-clf-serve:0.0.1"
+          image: "docker.io/oliverg91/text-clf-serve:0.0.2"
           ports:
             - containerPort: 9001
               protocol: TCP
